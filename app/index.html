@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Covert Comms Desktop</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
+<body>
+    <div class="settings">Settings</div>
+    <div class="close">Close</div>
+<div id="main" class="container-fluid">
+
+<!-- The sidebar -->
+<div class="sidebar">
+<i class="fa fa-fw fa-home"></i><h1>Inbox</h1>
+  <a href="#messages"><i class="fa fa-fw fa-home"></i> Messages</a>
+  <a href="#unread"><i class="fa fa-fw fa-wrench"></i> Unread</a>
+  <a href="#important"><i class="fa fa-fw fa-user"></i> Important</a>
+  <a href="#drafts"><i class="fa fa-fw fa-envelope"></i> Drafts</a>
+  </hr style="background:white;">
+  <a href="#help"><i class="fa fa-fw fa-help"></i> Help</a>
+  <a href="#help"><i class="fa fa-fw fa-settings"></i> Settings</a>
+
+  <i id="online" class="fa fa-chain" style="font-size:48px;color:green"></i>
+</div>
+
+<div class="maincontent">
+  <h2>Messages</h2>
+
+ <div class="container">
+  <img src="img/avatar.png" alt="Avatar">
+  <p>Hello. How are you today?</p>
+  <span class="time-right">11:00</span>
+</div>
+
+<div class="container darker">
+  <img src="img/avatar.png" alt="Avatar" class="right">
+  <p>Hey! I'm fine. Thanks for asking!</p>
+  <span class="time-left">11:01</span>
+</div>
+
+<div class="container">
+  <img src="img/avatar.png" alt="Avatar">
+  <p>Sweet! So, what do you wanna do today?</p>
+  <span class="time-right">11:02</span>
+</div>
+
+<div class="container darker">
+  <img src="img/avatar.png" alt="Avatar" class="right">
+  <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+  <span class="time-left">11:05</span>
+</div>
+</div>
+
+</hr style="background:white;">
+<div class="maincontentEditor">
+<div id="toolbar">
+</div>
+<div id="editor">
+  <p>Hello World!</p>
+  <p>Some initial <strong>bold</strong> text</p>
+  <p><br></p>
+</div>
+
+</div>
+<button class="btn success">Send</button>
+</div>
+
+<div class="">
+<a href="#messages"><i class="fa fa-fw fa-home"></i> Contact A</a>
+  <a href="#unread"><i class="fa fa-fw fa-wrench"></i> Contact B</a>
+  <a href="#important"><i class="fa fa-fw fa-user"></i> Contact C</a>
+  <a href="#drafts"><i class="fa fa-fw fa-envelope"></i> Contact D</a>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>

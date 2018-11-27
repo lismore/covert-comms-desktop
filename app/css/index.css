@@ -1,0 +1,247 @@
+html,
+body {
+    background: #0C7CA2;
+    height: 1000px;
+    width: 1000px;
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+}
+
+#main {
+    background: #1DCCEB;
+    border-bottom: 1px solid #73E2F7;
+    height: 1000px;
+}
+
+#main h1 img {
+    height: 31px;
+    width: 195px;
+}
+
+.settings,
+.close {
+    cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    position: absolute;
+    text-indent: -10000px;
+    top: 6px;
+    width: 32px;
+    z-index: 1;
+    -webkit-app-region: no-drag;
+}
+
+.settings {
+    background: transparent url('../img/settings.png') no-repeat 4px 4px;
+    background-size: 24px 24px;
+    right: 38px;
+}
+
+.close {
+    background: transparent url('../img/close.png') no-repeat 4px 4px;
+    background-size: 24px 24px;
+    right: 6px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 16px;
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    -webkit-app-region: no-drag;
+}
+
+.sidebar h1 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    -webkit-app-region: no-drag;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.maincontent {
+    margin-left: 150px;
+    margin-right: 25px;
+    /* Same as the width of the sidenav */
+    padding: 10px 10px;
+    -webkit-app-region: no-drag;
+    width: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.maincontentEditor {
+    margin-left: 150px;
+    /* Same as the width of the sidenav */
+    padding: 5px 5px;
+    -webkit-app-region: no-drag;
+    width: 80%;
+}
+
+
+/* Chat containers */
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 1px;
+    margin: 10px 0;
+    -webkit-app-region: no-drag;
+    width: 90%;
+}
+
+.containerEditor {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 1px;
+    -webkit-app-region: no-drag;
+    width: 90%;
+}
+
+
+/* Darker chat container */
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+
+/* Clear floats */
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+    -webkit-app-region: no-drag;
+}
+
+
+/* Style images */
+
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 90%;
+    margin-right: 20px;
+    border-radius: 50%;
+    -webkit-app-region: no-drag;
+}
+
+
+/* Style the right image */
+
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+    -webkit-app-region: no-drag;
+}
+
+
+/* Style time text */
+
+.time-right {
+    float: right;
+    color: #aaa;
+    -webkit-app-region: no-drag;
+}
+
+
+/* Style time text */
+
+.time-left {
+    float: left;
+    color: #999;
+    -webkit-app-region: no-drag;
+}
+
+#editor {
+    -webkit-app-region: no-drag;
+    padding: 1px;
+    height: 200px;
+    width: 100%;
+    background: #ffffff;
+}
+
+#online {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.rightSideBar {
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    right: 0px;
+    background-color: #555555;
+    padding-top: 16px;
+}
+
+.rightSideBar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    -webkit-app-region: no-drag;
+}
+
+.rightSideBar h1 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    -webkit-app-region: no-drag;
+}
+
+.rightSideBar a:hover {
+    color: #f1f1f1;
+}
+
+.btn {
+    margin-left: 150px;
+    border: none;
+    background-color: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+
+/* On mouse-over */
+
+.btn:hover {
+    background: #eee;
+}
+
+.success {
+    color: green;
+}
